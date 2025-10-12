@@ -89,10 +89,11 @@ export default defineConfig({
         link: '/任务书/',
         collapsed: false,
         items: [
-          { text: '安装 Ubuntu 20.04', link: '/任务书/Ubuntu' },
+          { text: '安装 Ubuntu 22.04', link: '/任务书/Ubuntu' },
           { text: '使用 OpenCV', link: '/任务书/OpenCV' },
           { text: '能量机关拟合', link: '/任务书/Windmill' },
-          { text: 'RM Vision 5', link: '/任务书/RM_Vision_5/RM_Vision_5' },
+          { text: 'DX-ROS教程', link: '/任务书/DX-ROS教程' },
+          { text: 'RM Vision 5', link: '/任务书/RM_Vision_5' },
         ]
       },
       {

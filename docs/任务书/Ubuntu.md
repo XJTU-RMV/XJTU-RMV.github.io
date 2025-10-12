@@ -2,7 +2,7 @@
 
 ## 任务说明
 
-Ubuntu 20.04 安装任务是 RoboMaster 笃行战队视觉组的第一次培训任务，要求组员通过虚拟机/双系统/WSL/服务器等方式安装 Ubuntu 20.04 系统。
+Ubuntu 22.04 安装任务是 RoboMaster 笃行战队视觉组的第一次培训任务，要求组员通过**虚拟机/双系统/WSL/服务器**等方式安装 Ubuntu 22.04 系统。
 
 组员在完成任务的过程中需要注意以下的内容：
 
@@ -12,7 +12,7 @@ Ubuntu 20.04 安装任务是 RoboMaster 笃行战队视觉组的第一次培训�
   - 详细说明自己的环境配置，例如电脑型号，显卡，以及 Ubuntu 版本等。
   - 详细说明自己的问题，例如，我按照教程安装，但是出现了 xxx 错误，我尝试了 xxx，但是没有解决问题。
   - 在提问之前，尝试自己解决问题，但是不要花费过多的时间，因为你的时间同样宝贵，快速获得解决方案正是提问的价值所在。
-- 教程给出了 Ubuntu 20.04 的双系统的安装方法，但是并未给出虚拟机/WSL/服务器的安装方法，在这里简单列举一下对比：
+- 教程给出了 Ubuntu 22.04 的双系统的安装方法，但是并未给出虚拟机/WSL/服务器的安装方法，在这里简单列举一下对比：
   - 虚拟机可以在 Windows 系统中运行，比较容易安装，但是在后续任务中的配置可能会出现没有接触的问题（视觉组的主要技术积累在于双系统上的开发），且具有较高的性能限制。
   - WSL 基础并不具备图形化界面，需要并且需要进行一定量的配置，但是是在 Windows 系统中最为优雅的方法之一。方法可以参考 [此篇博客](https://blog.csdn.net/weixin_45027467/article/details/106862520)。
   - 服务器具备一定的延迟，需要网络才可以使用，并且需要按量付费（此经费需要自费，本任务已经给出大量的常规方法），但是配置十分地一键。同时，部分的如文件传输/GUI 较为麻烦。
@@ -68,10 +68,10 @@ Linux 系统是一套免费使用和自由传播的类 Unix 操作系统，是�
 让我用通俗的流程来讲解一下，以下讲解下载并安装 `Ubuntu20.04.5`：
 
 :::warning
-**请注意，本文写作时队伍中系统版本与讲解安装均为Ubuntu20.04.5，而如今Ubuntu20.04已经变为20.04.6，请读者选择20.04.6版本安装，区别仅在于下载的iso文件不同，其他的内容均相同，只是换了个名字。本文大多数名称与图片均进行了更新，但若仍然存在混淆，请勿介意。**
+**请注意，本文写作时队伍中系统版本与讲解安装均为Ubuntu20.04.5，当前赛季使用22.04.5，请读者选择22.04.5版本安装，区别仅在于下载的iso文件不同，其他的内容均相同，只是换了个名字。本文大多数名称与图片均进行了更新，但若仍然存在混淆，请勿介意。**
 :::
 
-1. 从清华源下载 [ubuntu-20.04.6-desktop-amd64.iso](https://mirrors.tuna.tsinghua.edu.cn/ubuntu-releases/20.04.6/ubuntu-20.04.6-desktop-amd64.iso)（点一下直接下载，或者不行的话可以手动前往 [清华源界面](https://mirrors.tuna.tsinghua.edu.cn/ubuntu-releases/20.04.6/) 选择 `ubuntu-20.04.6-desktop-amd64.iso` 下载）。（Ubuntu 22.04 使用链接 [22.04.4](https://mirrors.tuna.tsinghua.edu.cn/ubuntu-releases/22.04.5/)，选择 [ubuntu-22.04.4-desktop-amd64.iso](https://mirrors.tuna.tsinghua.edu.cn/ubuntu-releases/22.04.5/ubuntu-22.04.5-desktop-amd64.iso)）。
+1. Ubuntu 22.04 使用链接 [22.04.5](https://mirrors.tuna.tsinghua.edu.cn/ubuntu-releases/22.04.5/)，从清华源下载 [ubuntu-22.04.5-desktop-amd64.iso](https://mirrors.tuna.tsinghua.edu.cn/ubuntu-releases/22.04.5/ubuntu-22.04.5-desktop-amd64.iso)（点一下直接下载，或者不行的话可以手动前往 [清华源界面](https://mirrors.tuna.tsinghua.edu.cn/ubuntu-releases/20.04.6/) 下载）。（Ubuntu22.04.6 选择 [ubuntu-20.04.6-desktop-amd64.iso](https://mirrors.tuna.tsinghua.edu.cn/ubuntu-releases/20.04.6/ubuntu-20.04.6-desktop-amd64.iso)）。
 2. 下载 [Ventoy-LatestRelease](https://mirrors.nju.edu.cn/github-release/ventoy/Ventoy/LatestRelease/)（从 GitHub 下载需要一定网络条件，此处选择的链接源自南京大学镜像站），或者不行的话手动前往其 [官网](https://www.ventoy.net/cn/index.html) 挑选下载，如下载 [ventoy-1.0.99-windows.zip](https://mirrors.nju.edu.cn/github-release/ventoy/Ventoy/LatestRelease/ventoy-1.0.99-windows.zip)。
 3. 解压下载的 Ventoy 压缩包，该压缩包开袋即食，进入解压后的文件夹，启动 `Ventoy2Disk.exe`，应出现以下界面：
 
